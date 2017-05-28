@@ -16,6 +16,12 @@
         
         
         
+        
+        .header_img {
+            width: 100%;
+        }
+        
+        
         .welcome_message {
             text-align: center;
             margin: 50px 0;
@@ -55,20 +61,38 @@
             border-radius: 20px;
             border: 1px solid #f5f5f6;
         }
-        .step:hover {
-            background: #e2e2e2;
-            border: 1px solid #00a651;
-        }
         .steps {
             background: #f5f5f6;
             padding: 20px 0;
         }
         
+        .info_link {
+            padding: 10px 0;
+            background: #00a651;
+            display: block;
+            text-align: center;
+            width: 30%;
+            border-radius: 14px;
+            text-decoration: none;
+            border: 2px solid #00a651;
+            color: black;
+            margin-top: 15px;
+            margin-left: 35%;
+        }
+        .info_link:hover {
+            background: green;
+            color: white;
+        }
         
         
         
         
-        
+        @media only screen and (min-width: 530px) {
+            .step .icon {
+                width: 30%;
+                margin-left: 35%;
+            }
+        }
         
         
         
@@ -95,14 +119,15 @@
              **************************/
             
             .step .icon {
-                width: 250px;
-                margin-left: 0;
+                width: 245px;
+                margin-left: 5px;
                 padding: 0;
                 position: absolute;
             }
             .step .info {
                 width: 60%;
                 padding: 35px 0;
+                margin-top: 20px;
                 position: absolute;
                 right: 0;
                 font-size: 20px;
@@ -115,14 +140,17 @@
             .step_right .icon {
                 position: absolute;
                 right: 0;
+                margin-left: 0;
+                margin-right: 5px;
             }
             .step_right .info {
                 left: -30px;
                 padding: 0;
+                margin-top: 30px;
                 
             }
             .step {
-                height: 200px;
+                height: 300px;
                 margin: 20px 0;
                 position: relative;
                 width: 90%;
@@ -156,6 +184,8 @@
 </head>
 
 <body>
+
+    <img class='header_img' src='img/header_img.png'>
     
     <div class='welcome_message'>
         <h1>Thank-you for picking me for your project</h1>
@@ -174,6 +204,8 @@
             <div class='info'>
                 <h3>Any questions?</h3>
                 <p>I'm here for you so if you have any questions or concerns, don't hesitate just send me an email, and will get back to you as soon as possible.</p>
+                
+                <a href='mailto:tpend9@icloud.com' target='_top' class='info_link'>Email Me</a>
             </div>
         </div>
         
@@ -185,6 +217,8 @@
             <div class='info'>
                 <h3>Updates on your prject</h3>
                 <p>Don't worry you can get as little or many updates that you want, as we have a custom login area, that I give a daily update on your project, this can be set up to be emailed to you. Any issues that might come up your project I will get in contact with you.</p>
+                
+                <a href='#' class='info_link'>learn More</a>
             </div>
             
             
@@ -200,6 +234,7 @@
                 <h3>On schedule</h3>
                 <p>Devilry on time, we will ensure that your project is ready to ship on schedule, and to the agreed upon requirements.</p>
                 
+                <a href='#' class='info_link'>learn More</a>
             </div>
             
             
